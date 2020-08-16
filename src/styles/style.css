@@ -1,6 +1,7 @@
 :root {
     --common-text-color: #333333; 
     --footer-text-color: #CACACA;
+    --button-color: #FF9900;
 }
 
 * {
