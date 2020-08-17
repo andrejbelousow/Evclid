@@ -25,20 +25,26 @@ button {
 }
 
 body {
-    max-width: 1920px;
+    min-width: 1170px;
     margin: 0;
     padding: 0;
 
     font-family: "Montserrat", "Arial", "Helvettica";
     font-weight: 400;
     font-size: 16px;
-    color: #333333;
+    color: var(--common-text-color);
     line-height: 1;
 }
 
 .container {
     max-width: 1770px;
     margin: 0 auto;
+}
+
+.section-title {
+    font-size: 48px;
+    line-height: 1;
+    font-weight: normal;
 }
 
 .main-header {
@@ -65,6 +71,10 @@ body {
 
 .main-header-list__item {
     margin-right: 70px;
+
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1;
 }
 
 .main-header-nav__link {
@@ -88,7 +98,11 @@ body {
 }
 
 .main-header-nav__link:hover {
-    border-bottom: 2px solid var(--button-color) ;
+    /* border-bottom: 2px solid var(--button-color); */
+}
+
+.promo {
+    margin-bottom: 104px;
 }
 
 .promo-container {
@@ -99,14 +113,16 @@ body {
 
 .promo-content-container {
     width: 52%;
-    padding-top: 100px;
+    padding-top: 102px;
     padding-left: 78px;
-    padding-bottom: 114px;
+    padding-bottom: 118px;
+
+    letter-spacing: 0.3px;
 }
 
 .main-title {
     margin: 0;
-    margin-bottom: 30px;
+    margin-bottom: 22px;
 
     font-weight: 800;
     font-size: 70px;
@@ -114,7 +130,7 @@ body {
 }
 
 .promo-description {
-    margin-bottom: 96px;
+    margin-bottom: 122px;
 
     font-size: 23px;
     line-height: 29px;
@@ -122,7 +138,7 @@ body {
 }
 
 .promo-button {
-    padding: 25px 37px;
+    padding: 25px 37.15px;
 
     font-size: 23px;
     color: white;
@@ -134,5 +150,47 @@ body {
 }
 
 .promo-button:hover {
-    box-shadow: 5px 5px 0px 0px rgba(255, 255, 255, 0.8);
+    /* box-shadow: 5px 5px 0px 0px rgba(255, 255, 255, 0.8); */
+}
+
+.about-title {
+    margin: 0;
+    margin-bottom: 28px;
+
+    letter-spacing: 0.3px;
+}
+
+.about__discription {
+    width: 69.5%;
+    margin-bottom: 44px;
+    
+    font-size: 16px;
+    line-height: 32px;
+}
+
+.tip {
+    width: 16px;
+    height: 16px;
+    padding-top: 12px;
+
+    background: url("/src/img/content/text-tooltip.svg") no-repeat;
+}
+
+.approaches-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    margin-right: -30px;
+}
+
+.approaches-picture {
+    position: relative;
+    margin-right: 30px;
+
+    background: url("/src/img/decor/about-img.jpg") no-repeat;
+}
+
+.approaches-picture__content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
