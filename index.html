@@ -9,57 +9,50 @@
     <link rel="stylesheet" href="/src/styles/style.css">
 </head>
 <body>
-    <header>
-        <nav class="header-nav">
-            <div class="container">
-                <div class="nav-wrapper">
-                    <ul class="header-list">
-                        <li class="header-list__item">
-                            <a href="#">
-                                <img src="/src/img/content/header-logo.svg" alt="Евклид - Проектные системы">
-                            </a>
-                        </li>
-                        <li class="header-list__item">
-                            <a href="#">
-                                О нас
-                            </a>
-                        </li>
-                        <li class="header-list__item">
-                            <a href="#">
-                                Проекты
-                            </a>
-                        </li>
-                        <li class="header-list__item">
-                            <a href="#">
-                                Этапы
-                            </a>
-                        </li>
-                        <li class="header-list__item">
-                            <a href="#">
-                                Отзывы
-                            </a>
-                        </li>
-                        <li class="header-list__item">
-                            <a href="#">
-                                Контакты
-                            </a>
-                        </li>
-                        <li class="header-list__item">
-                            <button type="button">
-                                <img src="/src/img/decor/Search.svg" alt="Поиск">
-                            </button>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+    <header class="main-header">
+        <nav class="main-header-nav container">
+            <a href="#" class="main-header-logo">
+                <img src="/src/img/content/header-logo.svg" alt="Евклид - Проектные системы">
+            </a>
+            <ul class="main-header-list">
+                <li class="main-header-list__item">
+                    <a href="#" class="main-header-nav__link">
+                        О нас
+                    </a>
+                </li>
+                <li class="main-header-list__item">
+                    <a href="#" class="main-header-nav__link">
+                        Проекты
+                    </a>
+                </li>
+                <li class="main-header-list__item">
+                    <a href="#" class="main-header-nav__link">
+                        Этапы
+                    </a>
+                </li>
+                <li class="main-header-list__item">
+                    <a href="#" class="main-header-nav__link">
+                        Отзывы
+                    </a>
+                </li>
+                <li class="main-header-list__item">
+                    <a href="#" class="main-header-nav__link">
+                        Контакты
+                    </a>
+                </li>
+            </ul>
+            <button type="button" class="main-header__search">
+                <img src="/src/img/decor/Search.svg" alt="Поиск">
+            </button>
         </nav>
     </header>
+
     <main>
 
         <section class="promo">
-            <div class="container">
-                <div class="promo-container">
-                    <h1 class="mein-title">
+            <div class="container promo-container">
+                <div class="promo-content-container">
+                    <h1 class="main-title">
                         Проектные решения любой сложности
                     </h1>
                     <p class="promo-description">
@@ -70,16 +63,19 @@
                         Заказать рассчет
                     </a>
                 </div>
+                
             </div>
         </section>
 
         <section class="about">
-            <h3 class="section-header">
-                О нас
-            </h3>
-            <p >
-
-            </p>
+            <div class="container">
+                <h3 class="section-title">
+                    О нас
+                </h3>
+                <p>
+    
+                </p>
+            </div>
         </section>
     </main>
     <footer>

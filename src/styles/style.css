@@ -5,13 +5,29 @@
 }
 
 * {
-    padding: 0;
-    margin: 0;
     box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
 }
 
 body {
     max-width: 1920px;
+    margin: 0;
+    padding: 0;
 
     font-family: "Montserrat", "Arial", "Helvettica";
     font-weight: 400;
@@ -25,6 +41,98 @@ body {
     margin: 0 auto;
 }
 
-main {
-    background: #e5e5e5;
+.main-header {
+    box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.1);
+}
+
+.main-header-nav {
+    display: flex;
+    justify-content: flex-start;
+    min-height: 100px;
+}
+
+.main-header-logo {
+    max-width: 224px;
+    align-self: center;
+}
+
+.main-header-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -70px;
+    margin-left: auto;
+}
+
+.main-header-list__item {
+    margin-right: 70px;
+}
+
+.main-header-nav__link {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.main-header__search {
+    margin-left: 70px;
+    align-self: center;
+}
+
+.main-header-nav__link {
+    border-bottom: 2px solid transparent;
+
+    color: var(--common-text-color);
+    line-height: 1;
+
+    transition: border-bottom 0.3s;
+}
+
+.main-header-nav__link:hover {
+    border-bottom: 2px solid var(--button-color) ;
+}
+
+.promo-container {
+    color: white;
+
+    background: url("/src/img/decor/promo-back.jpg") no-repeat;
+}
+
+.promo-content-container {
+    width: 52%;
+    padding-top: 100px;
+    padding-left: 78px;
+    padding-bottom: 114px;
+}
+
+.main-title {
+    margin: 0;
+    margin-bottom: 30px;
+
+    font-weight: 800;
+    font-size: 70px;
+    line-height: 86px;
+}
+
+.promo-description {
+    margin-bottom: 96px;
+
+    font-size: 23px;
+    line-height: 29px;
+    font-weight: bold;
+}
+
+.promo-button {
+    padding: 25px 37px;
+
+    font-size: 23px;
+    color: white;
+    font-weight: bold;
+    line-height: 1;
+
+    background-color: var(--button-color);
+    transition: box-shadow, 0.3s;
+}
+
+.promo-button:hover {
+    box-shadow: 5px 5px 0px 0px rgba(255, 255, 255, 0.8);
 }
