@@ -2,6 +2,7 @@
     --common-text-color: #333333; 
     --footer-text-color: #CACACA;
     --button-color: #FF9900;
+    --border-color: #cacaca;
 }
 
 * {
@@ -16,12 +17,15 @@ ul {
 
 a {
     text-decoration: none;
+    user-select: none;
+    cursor: pointer;
 }
 
 button {
     border: none;
     background: transparent;
     cursor: pointer;
+    user-select: none;
 }
 
 body {
@@ -45,6 +49,22 @@ body {
     font-size: 48px;
     line-height: 1;
     font-weight: normal;
+}
+
+.inner-title {
+    margin:0;
+
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.more-btn {
+    padding: 18px 34px 18px 35px;
+    margin-left: auto;
+    
+    color: white;
+    border: 2px solid var(--button-color);
 }
 
 .main-header {
@@ -153,6 +173,10 @@ body {
     /* box-shadow: 5px 5px 0px 0px rgba(255, 255, 255, 0.8); */
 }
 
+.about {
+    margin-bottom: 129px;
+}
+
 .about-title {
     margin: 0;
     margin-bottom: 28px;
@@ -183,14 +207,149 @@ body {
 }
 
 .approaches-picture {
+    width: 50%;
     position: relative;
     margin-right: 30px;
+    width: 870px;
+    height: 622px;
 
     background: url("/src/img/decor/about-img.jpg") no-repeat;
-}
+}  
 
 .approaches-picture__content {
     position: absolute;
     bottom: 0;
     left: 0;
+
+    display: flex;
+    align-items: center;
+    padding: 26px 69px 28px 54px;
+
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+
+    background: url("/src/img/decor/about-img-blur.jpg") no-repeat;
+    background-size: cover;
+}
+
+.approaches-picture__content p {
+    flex-basis: 67%;
+
+    line-height: 30px;
+}
+
+.approaches-picture__content a {
+    margin-left: auto;
+}
+
+.approaches-items {
+    width: 870px;
+    margin-bottom: -30px;
+}
+
+.approaches-item-wrapper {
+    position: relative;
+    
+    margin-bottom: 30px;
+    padding: 66px 116px 49px 300px;
+
+    font-size: 16px;
+    line-height: 32px;
+
+    border: 1px solid var(--border-color);
+}
+
+.approaches-item-title {
+    margin-bottom: -9px;
+}
+
+.consult-approach .approaches-item-wrapper {
+    padding: 73px 116px 49px 300px; 
+}
+ 
+.consult-approach .approaches-item-wrapper:before {
+    position: absolute;
+    top: 58px;
+    left: 82px;
+    width: 189px;
+    content: url("/src/img/decor/consult-approach-decor.svg");
+    display: block;
+}
+
+.improve-approach .approaches-item-wrapper:before  {
+    position: absolute;
+    top: 49px;
+    left: 82px;
+    width: 189px;
+    content: url("/src/img/decor/improve-approach-decor.svg");
+    display: block;
+}
+
+.our-work-title {
+    margin-left: -2px;
+    margin-bottom: 56px;
+}
+
+.step-wrapper {
+    display: flex;
+}
+
+.step-content {
+    width: 854px;
+    margin-right: 142px;
+}
+
+.work-steps-panel {
+    margin-bottom: 58px;
+}
+
+.work-steps {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    margin-right: -90px;
+}
+
+.work-steps__step {
+    margin-right: 90px;
+
+    font-size: 18px;
+}
+
+.work-steps__step.active {
+    color: var(--button-color);
+}
+
+.step-content__title {
+    margin-top: -8px;
+    margin-bottom: 7px;
+    
+    letter-spacing: 0.2px;
+}
+
+.step-content__description {
+    margin-top: 0;
+    margin-bottom: 81px;
+
+    line-height: 32px;
+    font-size: 16px;
+}
+
+.step-content__more {
+    padding: 17px 39px 17px 35px;
+    margin-right: 35px;
+
+    font-weight: bold;
+    
+    background-color: var(--button-color);
+    border: none;
+}
+
+.step-content__contract {
+    padding: 17px 39px 17px 35px;
+
+    color: var(--common-text-color);
+
+    border: 1px solid black;
 }
