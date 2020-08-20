@@ -365,6 +365,10 @@ body {
     margin-bottom: 86px;
 }
 
+.faq {
+    margin-bottom: 86px;
+}
+
 .faq-title {
     margin-bottom: 44px;
 }
@@ -372,7 +376,6 @@ body {
 .faq-list {
     display: flex;
     flex-direction: column;
-    margin-bottom: 100px;
     padding-left: 5px;
 }
 
@@ -409,18 +412,22 @@ body {
 
 .footer-wrapper {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 }
 
 .footer-info-container {
+    display: flex;
+    flex-direction: column;
     flex-basis: 20%;
+    margin-right: 245px;
 }
 
 .footer-logo {
-    margin-bottom: 10px;
+    margin-bottom: 4px;
 }
 
 .footer-info__text {
+    margin-top: 0;
     margin-bottom: 44px;
 
     line-height: 32px;
@@ -429,6 +436,7 @@ body {
 .social-links {
     display: flex;
     flex-wrap: wrap;
+    margin-left: -2px;
     margin-right: -25px;
 }
 
@@ -438,7 +446,7 @@ body {
 
 .request__title {
     margin: 0;
-    margin-bottom: 30px;
+    margin-bottom: 28px;
 
     font-size: 48px;
     font-weight: normal;
@@ -446,12 +454,9 @@ body {
 }
 
 .request-container {
-    flex-basis: 28%;
-}
-
-.request-action-container {
-    display: flex;
-    align-items: center;
+    flex-basis: 32.3%;
+    /* align-self: center; */
+    padding-top: 14px;
 }
 
 .request-form {
@@ -461,7 +466,7 @@ body {
 
 .request-form input,
 .request-form textarea {
-    padding: 15px 24px;
+    padding: 22px 24px 20px 26px;
 
     font-family: "Montserrat";
     font-size: 16px;
@@ -474,12 +479,49 @@ body {
     margin-bottom: 25px;
 }
 
+.request-form input[type="checkbox"] {
+    opacity: 0;
+}
+
 .request-form textarea {
-    margin-bottom: 50px;
+    padding: 18px 24px 20px 26px;
+    margin-bottom: 28px;
+}
+
+.request-action-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .request-form label {
+    position: relative;
+
     font-size: 16px;
+}
+
+.request-form label:before {
+    position: absolute;
+    
+    content: "";
+    display: inline-block;
+    height: 12px;
+    width: 12px;
+
+    border: 1px solid var(--footer-text-color);
+}
+
+.request-form label:after {
+    position: absolute;
+
+    content: "";
+    display: inline-block;
+    height: 4px;
+    width: 7px;
+
+    border-left: 2px solid #97EE3F;
+    border-bottom: 2px solid #97EE3F;
+    transform: rotate(-45deg);
 }
 
 .convention {
@@ -488,6 +530,7 @@ body {
 }
 
 .request-form input[type="submit"] {
+    padding: 20px 54px 20px 52px;
     margin-bottom: 0;
 
     font-weight: bold;
