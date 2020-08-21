@@ -457,6 +457,7 @@ body {
     flex-basis: 32.3%;
     /* align-self: center; */
     padding-top: 14px;
+    margin-right: 329px;
 }
 
 .request-form {
@@ -502,6 +503,8 @@ body {
 
 .request-form label:before {
     position: absolute;
+    top: 2px;
+    left: -17px;
     
     content: "";
     display: inline-block;
@@ -513,8 +516,10 @@ body {
 
 .request-form label:after {
     position: absolute;
+    left: -14px;
+    top: 5px;
 
-    content: "";
+    content: none;
     display: inline-block;
     height: 4px;
     width: 7px;
@@ -541,6 +546,10 @@ body {
     user-select: none;
 }
 
+.request-form input[type="checkbox"]:checked +  label:after {
+    content: "";
+}
+
 .footer-links-container {
     align-self: center;
 }
@@ -552,7 +561,10 @@ body {
 }
 
 .footer-link {
-    margin-bottom: 15px;
+    margin-bottom: 18px;
+
+    font-size: 18px;
+    font-weight: 600;   
 }
 
 .footer-link a {
