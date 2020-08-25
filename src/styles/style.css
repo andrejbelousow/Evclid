@@ -92,6 +92,7 @@ body {
 .main-header-list {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     margin-right: -70px;
     margin-left: auto;
 }
@@ -106,8 +107,6 @@ body {
 
 .main-header-nav__link {
     display: flex;
-    height: 100%;
-    align-items: center;
 }
 
 .main-header__search {
@@ -181,7 +180,7 @@ body {
 }
 
 .about {
-    margin-bottom: 129px;
+    margin-bottom: 42px;
 }
 
 .about-title {
@@ -193,7 +192,7 @@ body {
 
 .about__discription {
     width: 69.5%;
-    margin-bottom: 44px;
+    margin-bottom: 0;
     
     font-size: 16px;
     line-height: 32px;
@@ -211,6 +210,7 @@ body {
     display: flex;
     justify-content: flex-start;
     margin-right: -30px;
+    margin-bottom: 129px;
 }
 
 .approaches-picture {
