@@ -208,29 +208,25 @@ body {
 
 .approaches-wrapper {
     display: flex;
-    justify-content: flex-start;
-    margin-right: -30px;
+    justify-content: space-between;
     margin-bottom: 129px;
 }
 
 .approaches-picture {
-    width: 50%;
     position: relative;
-    margin-right: 30px;
-    width: 870px;
-    height: 622px;
+
+    display: flex;
+    align-items: flex-end;
+    width: 48.3%;
 
     background: url("/src/img/decor/about-img.jpg") no-repeat;
 }  
 
 .approaches-picture__content {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-
     display: flex;
     align-items: center;
     padding: 26px 69px 28px 54px;
+    width: 100%;
 
     color: white;
     font-weight: bold;
@@ -250,8 +246,11 @@ body {
     margin-left: auto;
 }
 
+.approaches-list {
+    width: 49.2%;
+}
+
 .approaches-items {
-    width: 870px;
     margin-bottom: -30px;
 }
 
