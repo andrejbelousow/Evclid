@@ -208,8 +208,7 @@ body {
 
 .approaches-wrapper {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    /* flex-wrap: wrap; */
     margin-bottom: 129px;
 }
 
@@ -225,7 +224,7 @@ body {
 } 
 
 .approaches-picture__content {
-    position: absolute;
+    position: relative;
     bottom: 0;
 
     display: flex;
@@ -240,8 +239,6 @@ body {
 
     background: inherit;
     background-position: bottom;
-    box-shadow:  0 0 40px 0 rgba(0, 0, 0, 0.7);
-    
 }
 
 .approaches-picture__content:after {
@@ -273,6 +270,7 @@ body {
 
 .approaches-list {
     width: 49.2%;
+    margin-left: auto;
 }
 
 .approaches-items {
@@ -283,7 +281,8 @@ body {
     position: relative;
     
     margin-bottom: 30px;
-    padding: 66px 116px 49px 300px;
+    /* padding: 66px 116px 49px 300px; */
+    min-height: 295px;
 
     font-size: 16px;
     line-height: 32px;
@@ -594,4 +593,21 @@ body {
 
 .footer-link a {
     color: var(--footer-text-color);
+}
+
+@media screen and (max-width: 1764px) {
+
+    /* .approaches-wrapper {
+        justify-content: flex-start;
+    }
+
+    .approaches-picture {
+        width: 100%;
+        flex-grow: 1;
+    }
+
+    .approaches-list {
+        width: 100%;
+        flex-grow: 1;
+    } */
 }
