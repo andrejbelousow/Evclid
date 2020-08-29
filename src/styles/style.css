@@ -140,7 +140,7 @@ body {
 }
 
 .promo-content-container {
-    width: 52%;
+    width: 57%;
     padding-top: 102px;
     padding-left: 78px;
     padding-bottom: 118px;
@@ -382,17 +382,18 @@ body {
 }
 
 .step-content__more {
-    padding: 19px 32px 22px 41px;
+    padding: 21px 33px 20px 40px;
     margin-right: 30px;
 
     font-weight: bold;
+    line-height: 21px;
     
     background-color: var(--button-color);
     border: none;
 }
 
 .step-content__contract {
-    padding: 18px 38px 21px 35px;
+    padding: 20px 37px 19px 37px;
 
     color: var(--common-text-color);
 
@@ -404,11 +405,14 @@ body {
 }
 
 .faq {
-    margin-bottom: 86px;
+    margin-bottom: 85px;
 }
 
 .faq-title {
     margin-bottom: 44px;
+    margin-left: 2px;
+
+    line-height: 50px;
 }
 
 .faq-list {
@@ -499,7 +503,8 @@ body {
 
 .request__title {
     margin: 0;
-    margin-bottom: 28px;
+    margin-bottom: 27px;
+    margin-left: -2px;
 
     font-size: 48px;
     font-weight: normal;
@@ -509,7 +514,7 @@ body {
 .request-container {
     flex-basis: 32.3%;
     /* align-self: center; */
-    padding-top: 14px;
+    padding-top: 15px;
     margin-right: 329px;
 }
 
@@ -539,7 +544,7 @@ body {
 
 .request-form textarea {
     padding: 18px 24px 20px 26px;
-    margin-bottom: 28px;
+    margin-bottom: 30px;
 }
 
 .request-action-container {
@@ -556,8 +561,8 @@ body {
 
 .request-form label:before {
     position: absolute;
-    top: 2px;
-    left: -17px;
+    top: 1px;
+    left: -18px;
     
     content: "";
     display: inline-block;
@@ -569,8 +574,8 @@ body {
 
 .request-form label:after {
     position: absolute;
-    left: -14px;
-    top: 5px;
+    left: -16px;
+    top: 3px;
 
     content: none;
     display: inline-block;
