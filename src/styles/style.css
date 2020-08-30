@@ -47,6 +47,11 @@ body {
     line-height: 1;
 }
 
+header, section, footer {
+    padding-left: 75px;
+    padding-right: 75px;
+}
+
 .container {
     max-width: 1770px;
     margin: 0 auto;
@@ -143,7 +148,7 @@ body {
     width: 57%;
     padding-top: 102px;
     padding-left: 78px;
-    padding-bottom: 118px;
+    height: 620px;
 
     letter-spacing: 0.3px;
 }
@@ -244,14 +249,14 @@ body {
     display: flex;
     align-items: center;
     padding: 26px 69px 28px 54px;
-    /* width: 100%; */
+    width: 100%;
     overflow: hidden;
 
     color: white;
     font-weight: bold;
     font-size: 16px;
 
-    background: url("/src/img/decor/about-img.jpg") no-repeat;
+    background: url("/src/img/decor/about-img-blur.jpg") no-repeat;
     background-position: bottom;
 }
 
@@ -283,8 +288,8 @@ body {
 }
 
 .approaches-list {
-    /* width: 49.2%; */
-    width: 870px;
+    width: 49.2%;
+    /* width: 870px; */
     flex-shrink: 0;
     margin-left: auto;
 }
