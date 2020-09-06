@@ -260,6 +260,12 @@ header, section, footer {
     background-position: bottom;
 }
 
+@media screen and (max-width: 1802px) {
+    .approaches-picture__content {
+        background-size: cover;
+    }
+}
+
 .approaches-picture__content:after {
     content: "";
     position: absolute;
@@ -343,6 +349,12 @@ header, section, footer {
 
 .step-wrapper {
     display: flex;
+}
+
+.step-image img {
+    max-width: 100%; 
+    object-fit: cover;   
+    height: 100%;
 }
 
 .step-content {
@@ -437,6 +449,12 @@ header, section, footer {
     border-bottom: 1px solid var(--border-color);
 }
 
+.faq__question {
+    display: inline-block;
+
+    cursor: pointer;
+}
+
 .faq-list__item summary {
     list-style: none;
 }
@@ -474,7 +492,6 @@ header, section, footer {
 
 .footer-wrapper {
     display: flex;
-    /* justify-content: space-between; */
 }
 
 .footer-info-container {
@@ -518,6 +535,7 @@ header, section, footer {
 
 .request-container {
     flex-basis: 32.3%;
+    min-width: 490px;
     /* align-self: center; */
     padding-top: 15px;
     margin-right: 329px;
@@ -548,14 +566,14 @@ header, section, footer {
 }
 
 .request-form textarea {
-    padding: 18px 24px 20px 26px;
+    padding: 18px 24px 35px 26px;
     margin-bottom: 30px;
 }
 
 .request-action-container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 }
 
 .request-form label {
@@ -598,8 +616,11 @@ header, section, footer {
 }
 
 .request-form input[type="submit"] {
-    padding: 20px 54px 20px 52px;
+    width: 47%;
+    min-width: 165px;
+    /* padding: 20px 54px 20px 52px; */
     margin-bottom: 0;
+    margin-right: 22px;
 
     font-weight: bold;
     color: white;
@@ -635,7 +656,8 @@ header, section, footer {
     color: var(--footer-text-color);
 }
 
-@media screen and (max-width: 1764px) {
+
+@media screen and (max-width: 1910px) {
 
     /* .approaches-wrapper {
         justify-content: flex-start;
@@ -650,8 +672,38 @@ header, section, footer {
         width: 100%;
         flex-grow: 1;
     } */
+
+    .footer-wrapper {
+        justify-content: space-between;
+    }
+
+    .footer-info-container,
+    .request-container {
+        margin-right: 0;
+    }
+    
+    .footer-info-container {
+        flex-basis: 21.5%;
+    }
+
+    .footer-links-container {
+        display: flex;
+        flex-basis: 22%;
+        justify-content: flex-end;
+        padding-top: 0;
+    }
+
+    .request-form label:before {
+        top: 8px;
+    }
+
+    .request-form label:after {
+        top: 10px;
+    }
 }
 
-@media screen and (max-width: 1634px) {
-    /* Для картинки и карточек в блоке О нас */
+@media screen and (max-width: 1600px) {
+    .step-content {
+        margin-right: 80px;
+    }
 }
