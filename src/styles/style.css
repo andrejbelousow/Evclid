@@ -36,7 +36,6 @@ input, textarea {
 }
 
 body {
-    min-width: 1170px;
     margin: 0;
     padding: 0;
 
@@ -214,9 +213,12 @@ header, section, footer {
     background: url("/src/img/content/text-tooltip.svg") no-repeat;
 }
 
+.approaches {
+    margin-bottom: 129px;
+}
+
 .approaches-wrapper {
     display: flex;
-    margin-bottom: 129px;
 }
 
 .approaches-picture {
@@ -295,7 +297,7 @@ header, section, footer {
     position: relative;
     
     margin-bottom: 30px;
-    padding: 66px 0 49px 300px;
+    padding: 66px 50px 49px 300px;
 
     font-size: 16px;
     line-height: 32px;
@@ -307,12 +309,12 @@ header, section, footer {
     margin-bottom: -9px;
 }
 
-.approaches-item p {
-    width: 75%;
+.approaches-items__item p {
+    width: 82%;
 }
 
 .consult-approach .approaches-item-wrapper {
-    padding: 73px 0 49px 300px; 
+    padding-top: 73px; 
 }
  
 .consult-approach .approaches-item-wrapper:before {
@@ -360,7 +362,6 @@ header, section, footer {
 .work-steps {
     display: flex;
     flex-wrap: wrap;
-    width: 50%;
     margin-right: -90px;
 }
 
@@ -387,6 +388,11 @@ header, section, footer {
 
     line-height: 32px;
     font-size: 16px;
+}
+
+.step-content__contract,
+.step-content__more {
+    display: inline-block;
 }
 
 .step-content__more {
@@ -433,6 +439,7 @@ header, section, footer {
     position: relative;
 
     padding-top: 43px;
+    padding-right: 60px;
     padding-bottom: 46px;
     margin-top: -1px;
 
@@ -527,7 +534,6 @@ header, section, footer {
 .request-container {
     flex-basis: 32.3%;
     min-width: 490px;
-    /* align-self: center; */
     padding-top: 15px;
     margin-right: 329px;
 }
@@ -548,7 +554,7 @@ header, section, footer {
     background-color: #414141;
 }
 
-.request-form input:not([type="checkbox"]) {
+.request-form input {
     margin-bottom: 25px;
 }
 
@@ -608,7 +614,6 @@ header, section, footer {
 input.request-form__submit {
     width: 47%;
     min-width: 165px;
-    /* padding: 20px 54px 20px 52px; */
     margin-bottom: 0;
     margin-right: 22px;
 
@@ -725,16 +730,18 @@ input.request-form__submit {
 }
 
 @media screen and (max-width: 1400px) {
+    .about p {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1400px) and (min-width: 1280px) {
     .footer-info-container {
         flex-basis: 27%;
     }
 
     .request-container {
         min-width: 406px;
-    }
-
-    .about p {
-        width: 100%;
     }
 
     .request-action-container {
@@ -744,7 +751,7 @@ input.request-form__submit {
     input.request-form__submit {
         width: 100%;
         margin-right: 0;
-        margin-bottom: 22px;
+        margin-bottom: 10px;
     }
 
     .request-form label:before {
@@ -754,4 +761,8 @@ input.request-form__submit {
     .request-form label:after {
         top: 4px;
     }
+}
+
+@media screen and (max-width: 1280px) {
+
 }
