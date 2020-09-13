@@ -11,9 +11,11 @@
 <body>
     <header class="main-header">
         <nav class="main-header-nav container">
-            <a href="#" class="main-header-logo">
-                <img src="/src/img/content/header-logo.svg" alt="Евклид - Проектные системы">
-            </a>
+            <div class="main-header-logo-container">
+                <a href="#" class="main-header-logo">
+                    <img src="/src/img/content/header-logo.svg" alt="Евклид - Проектные системы">
+                </a>
+            </div>
             <ul class="main-header-list">
                 <li class="main-header-list__item">
                     <a href="#about" class="main-header-nav__link">
@@ -42,7 +44,17 @@
                 </li>
             </ul>
             <button type="button" class="main-header__search">
-                <img src="/src/img/decor/Search.svg" alt="Поиск">
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="#ffffff" viewBox="0 0 26 26">
+                    <path fill="#333" d="M19.51 18.547l5.658 5.657-1.415 1.414-5.656-5.657z" />
+                    <circle cx="11.5" cy="11.5" r="10.5" stroke="#333" stroke-width="2" />
+                </svg>
+            </button>
+            <button type="button" class="main-header__burger-menu">
+                <svg width="30" height="23" viewBox="0 0 30 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="30" height="3" fill="#333333" />
+                    <rect y="10" width="30" height="3" fill="#333333" />
+                    <rect y="20" width="30" height="3" fill="#333333" />
+                </svg>
             </button>
         </nav>
     </header>
@@ -56,7 +68,7 @@
                         <h1 class="main-title">
                             Проектные решения любой сложности
                         </h1>
-                        <p class="promo-description">
+                        <p class="promo__description">
                             Есть над чем задуматься: базовые сценарии поведения пользователей и по сей день остаются
                             уделом
                             проектантов
@@ -64,6 +76,14 @@
                         <a href="#" class="promo-button">
                             Заказать расчет
                         </a>
+                    </div>
+                    <div class="promo__slider-control slider-control">
+                        <button type="button" class="slider-control-btn slider-control-btn--active">
+                        </button>
+                        <button type="button" class="slider-control-btn">
+                        </button>
+                        <button type="button" class="slider-control-btn">
+                        </button>
                     </div>
                 </div>
             </div>
@@ -93,13 +113,15 @@
                 <div class="container">
                     <div class="approaches-wrapper">
                         <picture class="approaches-picture">
-                            <img class="approaches-picture__img" src="/src/img/decor/about-img.jpg" alt=" Процесс работы">
+                            <source srcset="/src/img/decor/about-img-1024.jpg" media="(max-width: 1024px)"
+                                type="image/jpg">
+                            <img class="approaches-picture__img" src="/src/img/decor/about-img.jpg" alt="Процесс работы">
                             <figcaption class="approaches-picture__content">
                                     <p>
                                         Принимая во внимание показатели успешности, перспективное планирование способствует
                                         подготовке и реализации новых принципов.
                                     </p>
-                                    <a href="#" class="more-btn">
+                                    <a href="#" class="more-btn approaches__button">
                                         Подробнее
                                     </a>
                             </figcaption>
@@ -107,24 +129,32 @@
                         <div class="approaches-list">
                             <ul class="approaches-items">
                                 <li class="approaches-items__item consult-approach">
-                                    <div class="approaches-item-wrapper">
-                                        <h4 class="inner-title approaches-item-title">
-                                            Консультация с широким активом
-                                        </h4>
-                                        <p>
-                                            А также свежий взгляд на привычные вещи - безусловно открывает новые горизонты для как самодостаточных, так и внешне зависимых концептуальных решений.
-                                        </p>
-                                    </div>
+                                    <article>
+                                        <div class="approaches-item-wrapper">
+                                            <h4 class="inner-title approaches-item-title">
+                                                Консультация с широким активом
+                                            </h4>
+                                            <p>
+                                                А также свежий взгляд на привычные вещи - безусловно открывает новые
+                                                горизонты для как самодостаточных, так и внешне зависимых концептуальных
+                                                решений.
+                                            </p>
+                                        </div>
+                                    </article>
                                 </li>
                                 <li class="approaches-items__item improve-approach">
-                                    <div class="approaches-item-wrapper">
-                                        <h4 class="inner-title approaches-item-title">
-                                            В своём стремлении повысить
-                                        </h4>
-                                        <p> 
-                                            Качество жизни, они забывают, что сплочённость команды профессионалов представляет собой интересный эксперимент проверки прогресса профессионального сообщества
-                                        </p>
-                                    </div>
+                                    <article>
+                                        <div class="approaches-item-wrapper">
+                                            <h4 class="inner-title approaches-item-title">
+                                                В своём стремлении повысить
+                                            </h4>
+                                            <p>
+                                                Качество жизни, они забывают, что сплочённость команды профессионалов
+                                                представляет собой интересный эксперимент проверки прогресса
+                                                профессионального сообщества
+                                            </p>
+                                        </div>
+                                    </article>
                                 </li>
                             </ul>
                         </div>
@@ -141,7 +171,7 @@
                 </h3>
                 <div class="work-steps-panel">
                     <ul class="work-steps">
-                        <li class="work-steps__step active">
+                        <li class="work-steps__step work-steps__step--active">
                             <a>1 шаг</a>
                         </li>
                         <li class="work-steps__step">
@@ -174,7 +204,10 @@
                         </a>
                     </div>
                     <div class="step-image">
-                        <img src="/src/img/decor/stages-img.jpg" alt="Изображение этапа">
+                        <picture>
+                            <source srcset="/src/img/decor/stages-img-1024.jpg" media="(max-width: 1024px)" type="image/jpg">
+                            <img src="/src/img/decor/stages-img.jpg" alt="Изображение этапа">
+                        </picture>
                     </div>
                 </div>
             </div>

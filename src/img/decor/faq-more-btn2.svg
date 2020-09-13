@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 100">
+    <view id="faq-button" viewBox="0 0 50 50">
+        <ellipse cx="25" cy="25" rx="24.9" ry="25" fill="#ececec"/>
+        <path d="M25.206,24.057V9h.882V24.057h15v.886h-15V40h-.882V24.943h-15v-.886Z" transform="translate(-0.15)" fill="#666" fill-rule="evenodd"/>
+    </view>
+    <view id="faq-button-hover" viewBox="50 0 50 50">
+        <circle cx="25" cy="75" r="25" fill="#d2d2d2"/>
+        <path d="M25.207,74.057V59h.886V74.057H41.15v.886H26.093V90h-.886V74.943H10.15v-.886Z" transform="translate(-0.15)" fill-rule="evenodd"/>
+    </view>
+</svg>
