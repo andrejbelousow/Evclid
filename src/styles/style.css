@@ -274,6 +274,7 @@ header, section, footer {
     width: 16px;
     height: 16px;
     padding-top: 12px;
+    margin-right: 4px;
 
     background: url("/src/img/content/text-tooltip.svg") no-repeat;
 }
@@ -736,6 +737,12 @@ input.request-form__submit {
     padding-top: 38px;
 }
 
+.links-logo {
+    display: none;
+    width: 150px;
+    height: 48px;
+}
+
 .footer-links {
     display: flex;
     flex-direction: column;
@@ -751,6 +758,10 @@ input.request-form__submit {
 
 .footer-link a {
     color: var(--footer-text-color);
+}
+
+.footer-links-social {
+    display: none;
 }
 
 
@@ -832,12 +843,11 @@ input.request-form__submit {
 }
 
 @media screen and (max-width: 1400px) {
+
     .about p {
         width: 100%;
     }
-}
 
-@media screen and (max-width: 1400px) and (min-width: 1280px) {
     .footer-info-container {
         flex-basis: 27%;
     }
@@ -1044,7 +1054,8 @@ input.request-form__submit {
     }
 
     .work-steps:before,
-    .work-steps__step--active:before
+    .work-steps__step--active:before,
+    .work-steps__step:hover:before
      {
         content: "";
         position: absolute;
@@ -1058,7 +1069,12 @@ input.request-form__submit {
 
     }
 
-    .work-steps__step--active:before {
+    .work-steps__step:hover {
+        color: var(--button-color);
+    }
+
+    .work-steps__step--active:before,
+    .work-steps__step:hover:before {
         background-color: var(--button-color);
     }
 
@@ -1132,7 +1148,8 @@ input.request-form__submit {
         top: 29%;
     }
 
-    .faq-list__item:nth-child(3) {
+    .faq-list__item:nth-child(3),
+    .faq-list__item:nth-child(5) {
         padding-top: 38px;
         padding-bottom: 43px;
     }
@@ -1142,9 +1159,64 @@ input.request-form__submit {
         padding-bottom: 26px;
     }
 
-    .faq-list__item:nth-child(5) {
-        padding-top: 38px;
-        padding-bottom: 43px;
+    .footer-info-container {
+        display: none;
     }
     
+    .request-container {
+        flex-basis: 57.8%;
+    }
+
+    .request-form input, .request-form textarea {
+        padding: 22px 24px 20px 24px;
+    }
+
+    .request-form textarea {
+        padding: 19px 24px 35px 24px;
+        margin-bottom: 29px;
+    }
+
+    .request-action-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    input.request-form__submit {
+        width: 45.2%;
+        margin-bottom: 0;
+    }
+
+    .request-form label::before {
+        top: 2px;
+    }
+
+    .footer-links-container {
+        flex-basis: 34.2%;
+        flex-direction: column;
+        align-self: auto;
+    }
+
+    .links-logo {
+        display: block;
+        width: auto;
+        height: auto;
+        margin-bottom: 17px;
+    }
+
+    .links-logo img {
+        width: 224px;
+        height: 72px;
+    }
+
+    .footer-link {
+        margin-bottom: 32px;
+    }
+
+    .footer-links-social {
+        display: flex;
+    }
+
+    .footer-links {
+        margin-bottom: 0;
+    }
 }
