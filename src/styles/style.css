@@ -47,8 +47,8 @@ body {
 }
 
 header, section, footer {
-    padding-left: 75px;
-    padding-right: 75px;
+    padding-left: 60px;
+    padding-right: 60px;
 }
 
 .container {
@@ -134,8 +134,9 @@ header, section, footer {
 
 .main-header__search {
     align-self: center;
-    margin-left: 75px;
-    padding-right: 12px;
+    padding-right: 11px;
+    padding-top: 7px;
+    margin-left: 72px;
 }
 
 .main-header__search path,
@@ -246,7 +247,7 @@ header, section, footer {
     position: absolute;
     left: 420px;
     right: 0;
-    bottom: 28px;
+    bottom: 31px;
 
     display: none;
 }
@@ -439,7 +440,6 @@ header, section, footer {
 .work-steps {
     display: flex;
     flex-wrap: wrap;
-    margin-right: -90px;
 }
 
 .work-steps__step {
@@ -917,7 +917,6 @@ input.request-form__submit {
 
         background: url("/src/img/decor/promo-back-1024.jpg") no-repeat;
         background-position-y: -101px;
-        background-size: cover;
     }
 
     .promo-content-container {
@@ -995,6 +994,10 @@ input.request-form__submit {
 
         min-height: 173px;
         padding: 16px 52px 16px 44px;
+
+        background: url("/src/img/decor/about-img-blur-1024.jpg") no-repeat;
+        background-size: cover;
+        background-position: bottom;
     }
 
     .approaches-picture__content p {
@@ -1050,7 +1053,13 @@ input.request-form__submit {
     .work-steps {
         position: relative;
 
+        justify-content: space-between;
         width: 50.7%;
+        margin-right: 0;
+    }
+
+    .work-steps__step {
+        margin-right: 0;
     }
 
     .work-steps:before,
