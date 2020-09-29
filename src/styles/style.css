@@ -245,7 +245,7 @@ header, section, footer {
 
 .promo__slider-control {
     position: absolute;
-    left: 420px;
+    left: 45.5%;
     right: 0;
     bottom: 31px;
 
@@ -1227,5 +1227,16 @@ input.request-form__submit {
 
     .footer-links {
         margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .main-header-list {
+        display: none;
+    }
+
+    .main-header__search,
+    .main-header__burger-menu {
+        margin-left: auto;
     }
 }
